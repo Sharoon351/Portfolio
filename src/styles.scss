@@ -1,1 +1,56 @@
-/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
+
+.tc-primary {
+    color: #4A6583;
+}
+.tc-white {
+    color: #FFFFFF;
+}
+.tc-secondary {
+    color: #AAAAAA;
+}
+.tc-dark {
+    color: #222;
+}
+.tc-light {
+    color: #aaa;
+}
+.tc-gray {
+    color: #666;
+}
+.bgc-primary {
+    background-color: #4A6583;
+}
+.bgc-white {
+    background-color: #FFFFFF;
+}
+.bgc-secondary {
+    background-color: #AAAAAA;
+}
+.fz-28 {
+    font-size: 1.75rem;
+}
+.fz-20 {
+    font-size: 1.875rem;
+}
+.fz-16 {
+    font-size: 1rem;
+}
+.fz-14 {
+    font-size: 0.875rem;
+}
+.fw-bolder  {
+    font-weight: 800;
+}
+.fw-bold  {
+    font-weight: 600;
+}
+.fw-normal {
+    font-weight: 400;
+}
+.fw-light {
+    font-weight: 300;
+}
+.lh-50 {
+    line-height: 3.125rem;
+}
