@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { PreLoaderComponent } from './common/pre-loader/pre-loader.component';
 import { PortfolioContainerComponent } from './portfolio-container/portfolio-container.component';
 import { PortfolioHeaderComponent } from './portfolio-container/portfolio-header/portfolio-header.component';
+import { PortfolioBodyComponent } from './portfolio-container/portfolio-body/portfolio-body.component';
+import { PortfolioUserBasicDetailsComponent } from './portfolio-container/portfolio-body/portfolio-user-basic-details/portfolio-user-basic-details.component';
+import { TypewriterDirective } from './common/directives/typewriter.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +16,9 @@ import { PortfolioHeaderComponent } from './portfolio-container/portfolio-header
     PreLoaderComponent,
     PortfolioContainerComponent,
     PortfolioHeaderComponent,
+    PortfolioBodyComponent,
+    PortfolioUserBasicDetailsComponent,
+    TypewriterDirective,
   ],
   imports: [
     BrowserModule,

@@ -54,3 +54,16 @@
 .lh-50 {
     line-height: 3.125rem;
 }
+.lh-28{
+    line-height: 1.75rem;
+}
+.ls-5{
+    letter-spacing: 0.031rem;
+}
+.common-btn {
+    border: 2px solid;
+    border-radius: 50px;
+    padding: 0.313rem 1.875rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.5s ease;
+}

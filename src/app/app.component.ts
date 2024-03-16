@@ -43,7 +43,7 @@ export class AppComponent implements OnInit{
     this.checkIsMobile();
     setTimeout(() => {
       this.showPreLoaderSpinner = false;
-    }, 2000);
+    }, 1000);
   }
 
 }
