@@ -1,9 +1,10 @@
-.portfolio-header{
-    &.mobile{
+.portfolio-header {
+    &.mobile {
         padding: 10px 20px;
         box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
     }
-    .name-logo{
+
+    .name-logo {
         height: 2.75rem;
         width: 2.75rem;
         border-radius: 100%;

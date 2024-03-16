@@ -1,4 +1,4 @@
-import {Component, HostListener, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 import { trigger, transition, style, animate } from '@angular/animations';
 import { DataService } from './common/services/data.service';
 
@@ -9,16 +9,16 @@ import { DataService } from './common/services/data.service';
   animations: [
     trigger('fadeInOut', [
       transition(':enter', [
-        style({opacity: 0}),
-        animate('0.5s ease-out', style({opacity: 1})),
+        style({ opacity: 0 }),
+        animate('0.5s ease-out', style({ opacity: 1 })),
       ]),
       transition(':leave', [
-        animate('0.5s ease-in', style({opacity: 0})),
+        animate('0.5s ease-in', style({ opacity: 0 })),
       ]),
     ]),
   ],
 })
-export class AppComponent implements OnInit{
+export class AppComponent implements OnInit {
   showPreLoaderSpinner: boolean = true;
   isMobile: boolean = false;
 
@@ -27,7 +27,7 @@ export class AppComponent implements OnInit{
   }
 
   @HostListener('window:resize', ['$event'])
-  onWindowResize(event: any): void{
+  onWindowResize(event: any): void {
     this.checkIsMobile();
   }
 
@@ -38,8 +38,8 @@ export class AppComponent implements OnInit{
   checkIsMobile() {
     this.isMobile = this.dataService.isMobile();
   }
-  
-  loadData(){
+
+  loadData() {
     this.checkIsMobile();
     setTimeout(() => {
       this.showPreLoaderSpinner = false;

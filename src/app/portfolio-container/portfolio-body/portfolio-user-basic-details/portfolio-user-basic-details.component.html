@@ -1,18 +1,22 @@
 <div class="portfolio-user-basic-details-container row">
-    <div class="col-12 col-md-6 col-lg-6 user-profile-section" [ngClass]="isMobile ? 'mobile' : ''">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 user-profile-section"
+        [ngClass]="isMobile ? 'mobile' : 'desktop'" [ngStyle]="{'max-height': isMobile ? '' : '300px'}">
         <div class="profile-wrapper">
             <img class="user-profile-img" [src]="user.profileImg" [alt]="user.fullName">
         </div>
     </div>
-    <div class="col-12 col-md-6 col-lg-6 user-intro-details-section" [ngClass]="isMobile ? 'mt-4 text-center' : ''">
+    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-8 user-intro-details-section"
+        [ngClass]="isMobile ? 'mt-4 text-center' : ''">
         <div class="typewrite" [appTypewriter]="user.typewiterText" [typewriterPeriod]="2000">
             <div class="wrap"></div>
         </div>
         <h1 class="user-full-name fw-bold">{{user.fullName}}</h1>
         <span class="user-description tc-gray fz-14 lh-28 ls-5">{{user.basicDescription}}</span>
         <div class="btns-section mt-3">
-            <button class="primary-btn common-btn fz-14 fw-light" [ngClass]="isMobile ? 'mb-4 w-100': 'me-2 mb-4'">Let's talk</button>
-            <button class="secondary-btn common-btn fz-14 fw-light" [ngClass]="isMobile ? 'w-100' : ''">Connect in Linkedin</button>
+            <button class="primary-btn common-btn fz-14 fw-light" [ngClass]="isMobile ? 'mb-4 w-100': 'me-2 mb-4'">Let's
+                talk</button>
+            <button class="secondary-btn common-btn fz-14 fw-light" [ngClass]="isMobile ? 'w-100' : ''">Connect in
+                Linkedin</button>
         </div>
     </div>
 </div>

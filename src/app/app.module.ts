@@ -9,6 +9,8 @@ import { PortfolioHeaderComponent } from './portfolio-container/portfolio-header
 import { PortfolioBodyComponent } from './portfolio-container/portfolio-body/portfolio-body.component';
 import { PortfolioUserBasicDetailsComponent } from './portfolio-container/portfolio-body/portfolio-user-basic-details/portfolio-user-basic-details.component';
 import { TypewriterDirective } from './common/directives/typewriter.directive';
+import { PortfolioWhatIDoComponent } from './portfolio-container/portfolio-body/portfolio-what-ido/portfolio-what-ido.component';
+import { TitleSectionComponent } from './common/title-section/title-section.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +21,8 @@ import { TypewriterDirective } from './common/directives/typewriter.directive';
     PortfolioBodyComponent,
     PortfolioUserBasicDetailsComponent,
     TypewriterDirective,
+    PortfolioWhatIDoComponent,
+    TitleSectionComponent,
   ],
   imports: [
     BrowserModule,

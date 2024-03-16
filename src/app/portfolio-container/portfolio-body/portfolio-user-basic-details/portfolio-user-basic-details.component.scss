@@ -1,21 +1,29 @@
-.portfolio-user-basic-details-container{
-    .user-profile-section{
+.portfolio-user-basic-details-container {
+    height: 100%;
+    margin-bottom: 6.25rem;
+
+    .user-profile-section {
         text-align: center;
-        &.mobile{
+
+        &.mobile {
             height: 50%;
-            .profile-wrapper{
+
+            .profile-wrapper {
                 width: 60%;
-                .user-profile-img{
+
+                .user-profile-img {
                     padding: 5px !important;
                 }
             }
         }
-        .profile-wrapper{
+
+        .profile-wrapper {
             display: inline-block;
             border-radius: 100%;
             overflow: hidden;
             box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            height: 50%;
+            height: 100%;
+
             .user-profile-img {
                 display: block;
                 width: 100%;
@@ -24,10 +32,11 @@
                 border-radius: 100%;
             }
         }
-        
+
     }
-    .user-intro-details-section{
-        .typewrite{
+
+    .user-intro-details-section {
+        .typewrite {
             min-height: 1.5em;
             display: inline-block;
             overflow: hidden;
@@ -45,21 +54,25 @@
                 right: -1.1em;
             }
         }
-        .btns-section{
-            .primary-btn{
+
+        .btns-section {
+            .primary-btn {
                 border-color: #4A6583;
                 color: #222;
                 background-color: transparent;
-                &:hover{
+
+                &:hover {
                     color: #fff;
                     background-color: #4A6583;
                 }
             }
-            .secondary-btn{
+
+            .secondary-btn {
                 border-color: #aaa;
                 color: #666;
                 background-color: transparent;
-                &:hover{
+
+                &:hover {
                     color: #222;
                     background-color: #aaa;
                 }
@@ -69,35 +82,21 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 803px) {
-    .common-btn{
-        width: 100%;  
+    .common-btn {
+        width: 100%;
     }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1000px) {
-    .profile-wrapper{
-        height: 65% !important;   
-    }
-}
-@media screen and (min-width: 1001px) and (max-width: 1200px) {
-    .profile-wrapper{
-        height: 75% !important;   
-    }
-}
-@media screen and (min-width: 1201px) and (max-width: 1350px) {
-    .profile-wrapper{
-        height: 60% !important;   
-    }
-}
-
-@keyframes blink{
-    0%{
+@keyframes blink {
+    0% {
         opacity: 0;
     }
+
     100% {
-        opacity: 0; /* Make the cursor disappear */
+        opacity: 0;
     }
+
     50% {
-        opacity: 1; /* Make the cursor visible */
+        opacity: 1;
     }
 }

@@ -14,7 +14,7 @@ export class PortfolioHeaderComponent {
   constructor(private dataService: DataService) {
     this.user = new User();
   }
-  getFirstLetter(){
+  getFirstLetter() {
     return this.dataService.getFirstLetter(this.user.firstName);
   }
 }

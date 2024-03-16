@@ -1,4 +1,5 @@
 @import '../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';
 
 .tc-primary {
     color: #4A6583;
@@ -27,17 +28,30 @@
 .bgc-secondary {
     background-color: #AAAAAA;
 }
-.fz-28 {
-    font-size: 1.75rem;
+
+.fz-12{
+    font-size: 0.75rem;
 }
-.fz-20 {
-    font-size: 1.875rem;
+.fz-14 {
+    font-size: 0.875rem;
 }
 .fz-16 {
     font-size: 1rem;
 }
-.fz-14 {
-    font-size: 0.875rem;
+.fz-18 {
+    font-size: 1.125rem;
+}
+.fz-20 {
+    font-size: 1.25rem;
+}
+.fz-21 {
+    font-size: 1.313rem;
+}
+.fz-28 {
+    font-size: 1.75rem;
+}
+.fz-33 {
+    font-size: 2.063rem;
 }
 .fw-bolder  {
     font-weight: 800;
