@@ -1,0 +1,3 @@
+<div class="portfolio-container" [ngClass]="isMobile ? 'mobile' : 'desktop'">
+    <app-portfolio-header *ngIf="!isMobile" [isMobile]="isMobile"/>
+</div>

@@ -1,4 +1,10 @@
 <div id="appContainer">
-    <app-pre-loader *ngIf="showPreLoaderSpinner"></app-pre-loader>
+    <app-pre-loader *ngIf="showPreLoaderSpinner; else portfolioContainer"/>
+    <ng-template #portfolioContainer>
+        <div [@fadeInOut] class="main-container">
+            <app-portfolio-header *ngIf="isMobile" [isMobile]="isMobile"/>
+            <app-portfolio-container [isMobile]="isMobile"/>
+        </div>
+    </ng-template>
 </div>
 

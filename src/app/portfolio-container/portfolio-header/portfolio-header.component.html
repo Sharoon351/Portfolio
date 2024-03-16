@@ -1,0 +1,5 @@
+<div class="portfolio-header d-flex align-items-center" [ngClass]="isMobile ? 'mobile' : 'desktop'">
+    <div class="name-logo bgc-primary tc-white fz-28 fw-bolder me-2">{{getFirstLetter()}}</div>
+    <div class="first-name fz-20 fw-bold me-1">{{user.firstName}}</div>
+    <div class="last-name fz-20 fw-normal">{{user.lastName}}</div>
+</div>
