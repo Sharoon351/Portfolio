@@ -13,6 +13,7 @@ import { PortfolioWhatIDoComponent } from './portfolio-container/portfolio-body/
 import { TitleSectionComponent } from './common/components/title-section/title-section.component';
 import { PortfolioProjectsComponent } from './portfolio-container/portfolio-body/portfolio-projects/portfolio-projects.component';
 import { ListItemComponent } from './common/components/list-item/list-item.component';
+import { PortfolioContactComponent } from './portfolio-container/portfolio-body/portfolio-contact/portfolio-contact.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +28,7 @@ import { ListItemComponent } from './common/components/list-item/list-item.compo
     TitleSectionComponent,
     PortfolioProjectsComponent,
     ListItemComponent,
+    PortfolioContactComponent,
   ],
   imports: [
     BrowserModule,

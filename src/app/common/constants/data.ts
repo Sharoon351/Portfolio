@@ -3,18 +3,34 @@ export class User {
     lastName: string;
     fullName : string;
     email: string;
+    emailMsg: string;
+    mobile: string;
+    mobileMsg: string;
+    location: string;
+    locationMsg: string;
     profileImg: string;
     typewiterText: string[];
     basicDescription: string;
     whatIDos: WhatIDo[];
     projects: Project[];
+    emailDetails: emailDetails;
+    phoneDetails: phoneDetails;
+    locationDetails: locationDetails;
 
     constructor(){
         this.firstName = 'Sharoon';
         this.lastName = 'Niaz';
         this.fullName = this.firstName + ' ' + this.lastName;
         this.email = 'sharonniaz93@gmail.com';
+        this.emailMsg = `I prefer emails and usually reply swiftly. I'm fluent in English and Urdu.`
+        this.emailDetails = {icon: 'bi bi-envelope', title: this.email, msg: this.emailMsg};
         this.profileImg = 'assets/images/profileImages/sharoon-portfolio-image.jpeg';
+        this.mobile = "+923034212033";
+        this.mobileMsg = `I'm usually best reached over email but please call or text me if your case is urgent.`;
+        this.phoneDetails = {icon: 'bi bi-phone', title: this.mobile, msg: this.mobileMsg }
+        this.location = "Pakistan & Remote";
+        this.locationMsg = `I'm happy to work on-site or remote depending on the project requirements.`;
+        this.locationDetails = {icon: 'bi bi-pin-map', title: this.location, msg: this.locationMsg };
         this.typewiterText = ['Software Engineer.', 'Full-Stack Web Developer.', 'Frontend Developer.', 'ASP.NET Core Developer.'];
         this.whatIDos = [
             {icon: 'bi bi-braces', name: "Full-Stack Web Development", description: "Proficient in developing web applications using a variety of technologies including ASP.NET Core, Angular, Vue.js, React, and AngularJS."},
@@ -49,4 +65,22 @@ export interface Project{
     icon: string, 
     description: string
     techs: string[]
+}
+
+export interface emailDetails{
+    icon: string,
+    title: string,
+    msg: string,
+}
+
+export interface phoneDetails {
+    icon: string,
+    title: string,
+    msg: string,
+}
+
+export interface locationDetails {
+    icon: string,
+    title: string,
+    msg: string,
 }
