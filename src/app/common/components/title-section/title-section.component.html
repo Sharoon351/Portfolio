@@ -1,5 +1,5 @@
-<div class="title">
-    <h2 class="title fz-21">{{title}}</h2>
+<div class="title-container">
+    <h2 class="title d-inline-block fz-21" [ngClass]="title">{{title}}</h2>
     <div class="progress-bar" [ngStyle]="{'width': mainWidth, 'background-color': unfilledProgressBarColor, 'height': '0.375rem'}">
         <div class="progress" [ngStyle]="{'width': progressWidth, 'background-color': filledProgressBarColor}"></div>
     </div>

@@ -1,0 +1,16 @@
+.list-item{
+    list-style: none;
+    display: inline-block;
+    
+    a{
+        display: inline-block;
+        font-size: 12px;
+        line-height: 1.5em;
+        padding: 2px 7px;
+        border-radius: 3px;
+        border: 2px solid #e5e5e5;
+        margin: 3px 2px 2px;
+        text-decoration: none;
+        text-wrap: nowrap
+    }
+}
