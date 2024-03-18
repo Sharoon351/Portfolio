@@ -1,0 +1,33 @@
+<div class="skills-container">
+    <div class="row">
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6">
+            <app-title-section [title]="'Coding Skills'" [unfilledProgressBarColor]="'#f5f5f5'"
+                [filledProgressBarColor]="'#4a6583'" />
+            <div class="mb-4"></div>
+            <div *ngFor="let skill of user.codingSkills">
+                <ng-container *ngTemplateOutlet="skillsTemplate; context: {$implicit: skill}"></ng-container>
+            </div>
+            <app-list-item *ngFor="let tech of user.codingSkillTechs" [listItem]="tech"></app-list-item>
+        </div>
+        <div class="col-12 col-sm-6 col-md-6 col-lg-6 mt-4 mt-sm-0">
+            <app-title-section [title]="'Other Skills'" [unfilledProgressBarColor]="'#f5f5f5'"
+                [filledProgressBarColor]="'#4a6583'" />
+            <div class="mb-4"></div>
+            <div *ngFor="let skill of user.otherSkills">
+                <ng-container *ngTemplateOutlet="skillsTemplate; context: {$implicit: skill}"></ng-container>
+            </div>
+            <ul class="tags p-0 mt-3">
+                <app-list-item *ngFor="let tech of user.otherSkillTechs" [listItem]="tech"></app-list-item>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<ng-template #skillsTemplate let-skill>
+    <div class="skill-template mb-3">
+        <h4 class="skill-name fz-13 fw-bold">{{skill.name}}</h4>
+        <div class="progress-bar mt-2">
+            <div class="progress" [ngStyle]="{'width': skill.percentage+'%', 'background-color': '#4A6583'}"></div>
+        </div>
+    </div>
+</ng-template>

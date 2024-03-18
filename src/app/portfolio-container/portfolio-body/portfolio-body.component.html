@@ -1,6 +1,7 @@
 <div class="portfolio-body" [ngClass]="isMobile ? 'mobile' : 'desktop'">
-    <app-portfolio-user-basic-details [isMobile]="isMobile" />
+    <app-portfolio-user-basic-details (scrollToContact)="scrollToContact()" [isMobile]="isMobile" />
     <app-portfolio-what-ido [isMobile]="isMobile" />
-    <app-portfolio-projects/>
-    <app-portfolio-contact [isMobile]="isMobile"/>
+    <app-portfolio-skills />
+    <app-portfolio-projects />
+    <app-portfolio-contact #contactComponent [isMobile]="isMobile" />
 </div>

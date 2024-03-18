@@ -7,9 +7,9 @@ import { User } from 'src/app/common/constants/data';
   styleUrls: ['./portfolio-projects.component.scss']
 })
 export class PortfolioProjectsComponent {
-  user: User; 
+  user: User;
 
-  constructor(){
+  constructor() {
     this.user = new User()
   }
 }

@@ -33,6 +33,9 @@ export class AppComponent implements OnInit {
 
   ngOnInit(): void {
     this.loadData();
+    this.dataService.getImageLoad().subscribe(data => {
+      this.showPreLoaderSpinner = !data;
+    })
   }
 
   checkIsMobile() {
@@ -41,9 +44,5 @@ export class AppComponent implements OnInit {
 
   loadData() {
     this.checkIsMobile();
-    setTimeout(() => {
-      this.showPreLoaderSpinner = false;
-    }, 1000);
   }
-
 }

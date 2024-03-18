@@ -8,10 +8,9 @@ import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 export class TitleSectionComponent implements OnInit, AfterViewInit {
   @Input() title = "";
   @Input() unfilledProgressBarColor = "";
-  @Input() progressWidth = ""
   @Input() filledProgressBarColor = "";
-  mainWidth: string = "90px";
-  
+  mainWidth: string = "";
+
   ngOnInit(): void {
   };
 

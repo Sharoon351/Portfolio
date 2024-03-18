@@ -14,6 +14,7 @@ import { TitleSectionComponent } from './common/components/title-section/title-s
 import { PortfolioProjectsComponent } from './portfolio-container/portfolio-body/portfolio-projects/portfolio-projects.component';
 import { ListItemComponent } from './common/components/list-item/list-item.component';
 import { PortfolioContactComponent } from './portfolio-container/portfolio-body/portfolio-contact/portfolio-contact.component';
+import { PortfolioSkillsComponent } from './portfolio-container/portfolio-body/portfolio-skills/portfolio-skills.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +30,7 @@ import { PortfolioContactComponent } from './portfolio-container/portfolio-body/
     PortfolioProjectsComponent,
     ListItemComponent,
     PortfolioContactComponent,
+    PortfolioSkillsComponent,
   ],
   imports: [
     BrowserModule,

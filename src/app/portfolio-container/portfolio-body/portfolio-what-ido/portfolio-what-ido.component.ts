@@ -10,7 +10,7 @@ export class PortfolioWhatIDoComponent {
   @Input() isMobile: boolean = false;
   user: User;
 
-  constructor(){
+  constructor() {
     this.user = new User();
   }
 

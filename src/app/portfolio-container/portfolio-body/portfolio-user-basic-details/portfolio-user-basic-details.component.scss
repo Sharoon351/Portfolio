@@ -61,7 +61,7 @@
                 color: #222;
                 background-color: transparent;
 
-                &:hover {
+                &.hover {
                     color: #fff;
                     background-color: #4A6583;
                 }
@@ -71,8 +71,9 @@
                 border-color: #aaa;
                 color: #666;
                 background-color: transparent;
+                text-decoration: none;
 
-                &:hover {
+                &.hover {
                     color: #222;
                     background-color: #aaa;
                 }
@@ -84,6 +85,11 @@
 @media screen and (min-width: 768px) and (max-width: 803px) {
     .common-btn {
         width: 100%;
+    }
+
+    .secondary-btn {
+        display: block;
+        text-align: center;
     }
 }
 

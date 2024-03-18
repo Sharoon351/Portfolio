@@ -1,4 +1,4 @@
-import { Component, Input } from '@angular/core';
+import { Component, ElementRef, Input, ViewChild } from '@angular/core';
 import { User } from 'src/app/common/constants/data';
 
 @Component({
@@ -9,8 +9,10 @@ import { User } from 'src/app/common/constants/data';
 export class PortfolioContactComponent {
   user: User;
   @Input() isMobile: boolean = false;
+  @ViewChild("contactContainer") contactContainer !: ElementRef;
   
-  constructor(){
+  constructor() {
     this.user = new User();
   }
+
 }
